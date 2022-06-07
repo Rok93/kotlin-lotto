@@ -68,6 +68,6 @@ class StringAddCalculatorTest : StringSpec({
         val text = "-1"
 
         // when // then
-        shouldThrowExactly<RuntimeException> { StringAddCalculator.add(text) }
+        shouldThrowExactly<IllegalArgumentException> { StringAddCalculator.add(text) }
     }
 })
